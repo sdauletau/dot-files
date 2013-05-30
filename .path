@@ -1,0 +1,36 @@
+# PATH
+# #####################
+# Set PATH so it includes /usr/local/bin before everything else in /etc/paths
+#
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+# #####################
+#unset JAVA_HOME
+#export JAVA_HOME="/usr/local/java/jdk1.7.0_04"
+
+unset JAVA_OPTS
+export JAVA_OPTS="-server -XX:+TieredCompilation -Xms512m -Xmx2048m"
+
+#unset SCALA_HOME
+#export SCALA_HOME="~/Applications/scala/scala-2.9.2"
+
+#unset GROOVY_HOME
+#export GROOVY_HOME="~/Applications/groovy/groovy-2.0.6"
+#export GROOVY_HOME="/usr/local/Cellar/groovy/2.1.1/libexec"
+
+#unset GRAILS_HOME
+#export GRAILS_HOME="~/Applications/grails/grails-2.1.0"
+
+#unset GRADLE_HOME
+#export GRADLE_HOME="~/Applications/gradle/gradle-1.3"
+
+#unset NEO4J_HOME
+#export NEO4J_HOME="/usr/local/Cellar/neo4j/community-1.8.2-unix/libexec"
+
+#unset NPM_HOME
+#export NPM_HOME="/usr/local/share/npm"
+
+#unset CATALINA_HOME
+#export CATALINA_HOME="/usr/local/Cellar/tomcat/7.0.39/libexec"
+
+#export PATH="${GROOVY_HOME}/bin":"${NPM_HOME}/bin":"${CATALINA_HOME}/bin":$PATH
