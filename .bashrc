@@ -92,7 +92,7 @@ prompt_command () {
     [ $rts -eq 0 ] && \
     local p="\[\033[1;30m\]>\[\033[0;32m\]>\[\033[1;32m\]>\[\033[m\]" || \
     local p="\[\033[1;30m\]>\[\033[0;31m\]>\[\033[1;31m\]>\[\033[m\]"
-    PS1="\h: ${w}$(__git_ps1)${p} "
+    PROMPT_COMMAND="__git_ps1 '\h: ${w}' '${p} '"
 }
-PROMPT_COMMAND=prompt_command
+prompt_command
 
