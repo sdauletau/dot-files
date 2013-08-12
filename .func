@@ -20,7 +20,7 @@ extract () {
 
 hig() {
         if [ ! -z $1 ] ; then
-                history | grep $1 | grep -v grep
+                history | grep -i $1 | grep -v grep
         else
                 echo "!! Need name to grep for"
         fi
@@ -28,9 +28,12 @@ hig() {
 
 psg() {
         if [ ! -z $1 ] ; then
-                ps aux | grep $1 | grep -v grep
+                ps aux | grep -i $1 | grep -v grep
         else
                 echo "!! Need name to grep for"
         fi
 }
 
+function mkdir {
+  command mkdir -p $1 && cd $1
+}
