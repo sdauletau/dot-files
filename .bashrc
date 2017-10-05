@@ -42,7 +42,7 @@ export HISTIGNORE=$'[ \t]*:&:[fb]g:exit:ll[ \t]*:la[ \t]*:ls[ \t]*:l[ \t]*:hi[ \
 export PROMPT_COMMAND="history -a"
 
 # Set default editor
-export EDITOR='subl -w'
+# export EDITOR='subl -w'
 
 # Path
 # #######
@@ -69,8 +69,8 @@ if [ -e "${HOME}/.func" ] ; then
 fi
 
 # brew install bash-completion
-if [ -f $(brew --prefix)/etc/bash_completion ] ; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ] ; then
+  . /usr/local/etc/bash_completion
 fi
 
 # source git branch prompt script
