@@ -8,8 +8,8 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 #unset JAVA_HOME
 #export JAVA_HOME="/usr/local/java/jdk1.7.0_04"
 
-unset JAVA_OPTS
-export JAVA_OPTS="-server -XX:+TieredCompilation -Xms512m -Xmx2048m"
+#unset JAVA_OPTS
+#export JAVA_OPTS="-server -XX:+TieredCompilation -Xms512m -Xmx2048m"
 
 #unset SCALA_HOME
 #export SCALA_HOME="~/Applications/scala/scala-2.9.2"
